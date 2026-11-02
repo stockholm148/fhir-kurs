@@ -6,6 +6,13 @@
   "name" : "FhirEducationKursIG"
 },
 {
+  "id" : "EducationEncouter",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/education/kursig/StructureDefinition/EducationEncouter",
+  "version" : "0.1.0",
+  "name" : "EducationEncounter"
+},
+{
   "id" : "EducationPatient",
   "type" : "StructureDefinition",
   "url" : "http://example.org/fhir/education/kursig/StructureDefinition/EducationPatient",

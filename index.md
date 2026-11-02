@@ -47,7 +47,7 @@ Detta är en R4 IG. Inga av funktionerna den använder har ändrats i R4B, så d
   "name" : "FhirEducationKursIG",
   "title" : "FHIR-utbildning Emmas variant – Kurs-IG",
   "status" : "draft",
-  "date" : "2026-11-02T10:45:43+00:00",
+  "date" : "2026-11-02T10:49:44+00:00",
   "publisher" : "FHIR-utbildning",
   "description" : "En liten Implementation Guide som byggs upp steg för steg under FHIR-utbildningen.",
   "jurisdiction" : [{
@@ -407,6 +407,21 @@ Detta är en R4 IG. Inga av funktionerna den använder har ändrats i R4B, så d
       },
       "name" : "Education Patient",
       "description" : "Patientprofil för FHIR-utbildningen. Profilen byggs ut steg för steg under kursen.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EducationEncouter.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EducationEncouter"
+      },
+      "name" : "Min profil",
       "exampleBoolean" : false
     },
     {

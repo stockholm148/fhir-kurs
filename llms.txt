@@ -9,6 +9,7 @@
 
 ### Resource Profiles
 
+* [Min profil](StructureDefinition-EducationEncouter.md)
 * [Education Patient](StructureDefinition-EducationPatient.md)
 
 ### ImplementationGuides
