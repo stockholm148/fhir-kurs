@@ -7,10 +7,23 @@
 
 ## Resources
 
+### CodeSystems
+
+* [Kontakttyp](CodeSystem-kontakttyp.md)
+
+### ValueSets
+
+* [Klass av vårdkontakt](ValueSet-education-encounter-class.md)
+* [Kontakttyp – ValueSet](ValueSet-kontakttyp-vs.md)
+
 ### Resource Profiles
 
 * [Education Encounter](StructureDefinition-EducationEncounter.md)
 * [Education Patient](StructureDefinition-EducationPatient.md)
+
+### Extensions
+
+* [Skyddad identitet](StructureDefinition-SkyddadIdentitet.md)
 
 ### ImplementationGuides
 

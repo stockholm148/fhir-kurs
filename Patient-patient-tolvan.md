@@ -12,6 +12,12 @@ Tolvan Tolvansson (official) Male, Födelsedatum: 1912-12-12 ( http://electronic
 
 -------
 
+| | |
+| :--- | :--- |
+| Civilstånd: | Married |
+| [Interpreter Required](http://hl7.org/fhir/extensions/5.4.0/StructureDefinition-patient-interpreterRequired.html) | false |
+| [Skyddad identitet](StructureDefinition-SkyddadIdentitet.md) | false |
+
 
 
 ## Resource Content
@@ -23,6 +29,14 @@ Tolvan Tolvansson (official) Male, Födelsedatum: 1912-12-12 ( http://electronic
   "meta" : {
     "profile" : ["http://example.org/fhir/education/kursig/StructureDefinition/EducationPatient"]
   },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired",
+    "valueBoolean" : false
+  },
+  {
+    "url" : "http://example.org/fhir/education/kursig/StructureDefinition/SkyddadIdentitet",
+    "valueBoolean" : false
+  }],
   "identifier" : [{
     "system" : "http://electronichealth.se/identifier/personnummer",
     "value" : "191212121212"
@@ -33,7 +47,14 @@ Tolvan Tolvansson (official) Male, Födelsedatum: 1912-12-12 ( http://electronic
     "given" : ["Tolvan"]
   }],
   "gender" : "male",
-  "birthDate" : "1912-12-12"
+  "birthDate" : "1912-12-12",
+  "maritalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "M",
+      "display" : "Married"
+    }]
+  }
 }
 
 ```

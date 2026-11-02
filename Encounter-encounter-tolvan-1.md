@@ -40,7 +40,11 @@ Profil: [Education Encounter](StructureDefinition-EducationEncounter.md)
     "display" : "ambulatory"
   },
   "type" : [{
-    "text" : "Besök"
+    "coding" : [{
+      "system" : "http://example.org/fhir/education/kursig/CodeSystem/kontakttyp",
+      "code" : "besok",
+      "display" : "Besök"
+    }]
   }],
   "subject" : {
     "reference" : "Patient/patient-tolvan"

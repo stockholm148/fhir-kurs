@@ -1,5 +1,16 @@
 {
   "codeSystems" : [{
+    "url" : "http://example.org/fhir/education/kursig/CodeSystem/kontakttyp",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "KontakttypCS",
+    "title" : "Kontakttyp",
+    "description" : "Typ av vårdkontakt (fiktivt kodsystem för utbildningen).",
+    "uses" : {
+    },
+    "ValueSet-kontakttyp-vs.html" : "Kontakttyp – ValueSet"
+  },
+  {
     "url" : "http://hl7.org/fhir/administrative-gender",
     "version" : "4.0.1",
     "status" : "active",
@@ -155,18 +166,6 @@
     "http://hl7.org/fhir/R4/valueset-encounter-special-arrangements.html" : "Special arrangements"
   },
   {
-    "url" : "http://terminology.hl7.org/CodeSystem/encounter-type",
-    "version" : "1.0.1",
-    "status" : "active",
-    "name" : "EncounterType",
-    "title" : "Encounter type",
-    "description" : "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
-    "oids" : ["2.16.840.1.113883.4.642.1.1088"],
-    "uses" : {
-    },
-    "http://hl7.org/fhir/R4/valueset-encounter-type.html" : "Encounter type"
-  },
-  {
     "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
     "version" : "2.0.1",
     "status" : "active",
@@ -248,6 +247,7 @@
     "oids" : ["2.16.840.1.113883.5.4"],
     "uses" : {
     },
+    "ValueSet-education-encounter-class.html" : "Klass av vårdkontakt",
     "http://terminology.hl7.org/7.5.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode"
   },
   {
@@ -296,8 +296,8 @@
     "oids" : ["2.16.840.1.113883.5.1008"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy",
-    "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+    "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus",
+    "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",

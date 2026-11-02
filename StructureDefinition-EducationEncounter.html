@@ -302,10 +302,10 @@
         <div id="tbl-key-inner">
           <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" id="EducationEncounterK" class="xhtTableBorder0" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" class="xhtRowBorder1" data-fhir="generated-heirarchy"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Elementets logiska namn" data-no-external="true">Namn</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information om användningen av elementet" data-no-external="true">Flaggor</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Lägsta och högsta antal gånger elementet kan förekomma i instansen" data-no-external="true">Kard.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Referens till elementets typ" data-no-external="true">Typ</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Ytterligare information om elementet" data-no-external="true">Beskrivning &amp; begränsningar</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('EducationEncounterK'), event.target.value)" type="text" aria-label="Filter"/> <button onClick="showPanel(this, document.getElementById('EducationEncounterK'), document.getElementById('ppEducationEncounterK'))" aria-controls="ppEducationEncounterK" style="background: none; border: 0; padding: 0; margin: 0; cursor: pointer" type="button" title="Filters" aria-label="Filters"><img src="tree-filter.png" alt=""/></button><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppEducationEncounterK"><label>Begränsningar <input onClick="filterDesc(document.getElementById('EducationEncounterK'), 'constraint',event.target.checked, document.getElementById('ppEducationEncounterK'))" size="1" name="constraint" checked="true" id="cbEducationEncounterK-constraint" type="checkbox" aria-label="constraint"/></label><br/><label>Bindningar <input onClick="filterDesc(document.getElementById('EducationEncounterK'), 'binding',event.target.checked, document.getElementById('ppEducationEncounterK'))" size="1" name="binding" checked="true" id="cbEducationEncounterK-binding" type="checkbox" aria-label="binding"/></label><br/><label>Skyldigheter <input onClick="filterDesc(document.getElementById('EducationEncounterK'), 'obligation',event.target.checked, document.getElementById('ppEducationEncounterK'))" size="1" name="obligation" checked="true" id="cbEducationEncounterK-obligation" type="checkbox" aria-label="obligation"/></label><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
 <tr fhir="generated-heirarchy" id="k-a" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resurs" class="hierarchy"/> <a no-external="true" href="StructureDefinition-EducationEncounter-definitions.html#Encounter" title="An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient." data-no-external="true">Encounter</a><a name="k-Encounter"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="Detta element har eller påverkas av begränsningar ( edu-enc-1, edu-enc-2 )" class="xhtConstraintStyle">C</a></td>
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></td>
-<td style="" class="hierarchy xhtCellBorder0">An interaction during which services are provided to the patient<br/></td></tr>
+<td style="" class="hierarchy xhtCellBorder0">An interaction during which services are provided to the patient<br class="constraint"/><span class="constraint">Constraints: </span><span title="En avslutad vårdkontakt (status = finished) ska ha en sluttid (period.end)." class="xhtPieceBold constraint">edu-enc-1</span><span class="constraint">, </span><span title="Sluttiden bör inte ligga före starttiden." class="xhtPieceBold constraint">edu-enc-2</span><br/></td></tr>
 <tr fhir="generated-heirarchy" id="k-aa" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitiv datatyp" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Encounter.</span><a no-external="true" href="StructureDefinition-EducationEncounter-definitions.html#Encounter.implicitRules" title="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc." data-no-external="true">implicitRules</a><a name="k-Encounter.implicitRules"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="Detta element är ett modifierande element">?!</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element är ett modifierande element. </span><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="Detta element ingår i sammanfattningar">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element ingår i sammanfattningar. </span></td>
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
@@ -327,12 +327,12 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="Detta element måste stödjas">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element måste stödjas. </span><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="Detta element ingår i sammanfattningar">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element ingår i sammanfattningar. </span></td>
 <td style="" class="hierarchy xhtCellBorder0">1..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Classification of patient encounter<br class="binding"/><span class="xhtPieceBold binding">Bindning: </span><a href="http://terminology.hl7.org/7.5.0/ValueSet-v3-ActEncounterCode.html" title="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode" class="binding">ActEncounterCode</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span><span class="binding">: </span><span class="binding">Classification of the encounter.</span></td></tr>
+<td style="" class="hierarchy xhtCellBorder0">Classification of patient encounter<br class="binding"/><span class="xhtPieceBold binding">Bindning: </span><a href="ValueSet-education-encounter-class.html" title="http://example.org/fhir/education/kursig/ValueSet/education-encounter-class" class="binding">Klass av vårdkontakt</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" id="k-ae" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Datatyp" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Encounter.</span><a no-external="true" href="StructureDefinition-EducationEncounter-definitions.html#Encounter.type" title="Specific type of encounter (e.g. e-mail consultation, surgical day-care, skilled nursing, rehabilitation)." data-no-external="true">type</a><a name="k-Encounter.type"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="Detta element måste stödjas">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element måste stödjas. </span><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="Detta element ingår i sammanfattningar">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element ingår i sammanfattningar. </span></td>
 <td style="" class="hierarchy xhtCellBorder0">1..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Specific type of encounter<br class="binding"/><span class="xhtPieceBold binding">Bindning: </span><a href="http://hl7.org/fhir/R4/valueset-encounter-type.html" title="http://hl7.org/fhir/ValueSet/encounter-type" class="binding">EncounterType</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span class="binding">)</span><span class="binding">: </span><span class="binding">The type of encounter.</span><br/></td></tr>
+<td style="" class="hierarchy xhtCellBorder0">Specific type of encounter<br class="binding"/><span class="xhtPieceBold binding">Bindning: </span><a href="ValueSet-kontakttyp-vs.html" title="http://example.org/fhir/education/kursig/ValueSet/kontakttyp-vs" class="binding">Kontakttyp – ValueSet</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span><br/></td></tr>
 <tr fhir="generated-heirarchy" id="k-af" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="" style="background-color: white; background-color: inherit" title="Referens till en annan resurs" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Encounter.</span><a no-external="true" href="StructureDefinition-EducationEncounter-definitions.html#Encounter.subject" title="The patient or group present at the encounter." data-no-external="true">subject</a><a name="k-Encounter.subject"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="Detta element måste stödjas">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element måste stödjas. </span><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="Detta element ingår i sammanfattningar">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element ingår i sammanfattningar. </span></td>
 <td style="" class="hierarchy xhtCellBorder0">1..1</td>
@@ -378,7 +378,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
 <td style="" class="hierarchy xhtCellBorder0">The namespace for the identifier value<br/><span class="xhtPieceBold">Obligatoriskt mönster: </span><span class="xhtPieceDarkGreen">urn:oid:1.2.752.29.4.19</span> (extensions allowed)</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Förklaring för detta format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Dokumentation för detta format</a></td></tr><script type="text/javascript">  // 3931089b-4069-445d-99e1-0a506cb82d7c
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Förklaring för detta format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Dokumentation för detta format</a></td></tr><script type="text/javascript">  // e8a12ec2-a6e0-41c2-8aa4-8035044e15c9
 document.getElementById('cbEducationEncounterK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('EducationEncounterK'), 'constraint', document.getElementById('cbEducationEncounterK-constraint').checked, document.getElementById('ppEducationEncounterK'));
 document.getElementById('cbEducationEncounterK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
@@ -428,31 +428,27 @@ filterDesc(document.getElementById('EducationEncounterK'), 'obligation', documen
     <td>Encounter.class</td>
     <td>Base</td>
     <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
     </td>
-    <td title="Classification of the encounter.">
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.5.0/ValueSet-v3-ActEncounterCode.html">ActEncounterCode</a>
-      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode" title="Klicka för att kopiera URL" class="btn-copy" aria-label="copy"></button>
-    </td>
-    <td title="Versionen är inte uttryckligen angiven, vilket innebär att den är fast till 3.0.0, versionen som hittas via paketreferenserna">&#x1F4E6;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.5.0">THO v7.5</a>
+      <a style="opacity: 1.0" href="ValueSet-education-encounter-class.html">Klass av vårdkontakt</a>
+      <button data-clipboard-text="http://example.org/fhir/education/kursig/ValueSet/education-encounter-class" title="Klicka för att kopiera URL" class="btn-copy" aria-label="copy"></button>
     </td>
+    <td title="Versionen är inte uttryckligen angiven, vilket innebär att den är fast till den version som tillhandahålls i denna specifikation">&#x1F4E6;0.1.0</td>
+    <td>Denna IG</td>
   </tr>
   <tr>
     <td>Encounter.type</td>
     <td>Base</td>
     <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
     </td>
-    <td title="The type of encounter.">
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-encounter-type.html">Encounter type</a>
-      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-type|4.0.1" title="Klicka för att kopiera URL" class="btn-copy" aria-label="copy"></button>
-    </td>
-    <td title="Versionen anges uttryckligen vara 4.0.1">&#x1F4CD;4.0.1</td>
     <td>
-      <a href="https://hl7.org/fhir/R4/">FHIR-std.</a>
+      <a style="opacity: 1.0" href="ValueSet-kontakttyp-vs.html">Kontakttyp – ValueSet</a>
+      <button data-clipboard-text="http://example.org/fhir/education/kursig/ValueSet/kontakttyp-vs" title="Klicka för att kopiera URL" class="btn-copy" aria-label="copy"></button>
     </td>
+    <td title="Versionen är inte uttryckligen angiven, vilket innebär att den är fast till den version som tillhandahålls i denna specifikation">&#x1F4E6;0.1.0</td>
+    <td>Denna IG</td>
   </tr>
   <tr>
     <td>Encounter.reasonCode</td>
@@ -511,6 +507,24 @@ filterDesc(document.getElementById('EducationEncounterK'), 'obligation', documen
       <b>Uttryck</b>
     </td>
   </tr>
+  <tr>
+    <td>edu-enc-1</td>
+    <td>error</td>
+    <td>Encounter</td>
+    <td>En avslutad vårdkontakt (status = finished) ska ha en sluttid (period.end).</td>
+    <td>
+      <code>status = 'finished' implies period.end.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>edu-enc-2</td>
+    <td>warning</td>
+    <td>Encounter</td>
+    <td>Sluttiden bör inte ligga före starttiden.</td>
+    <td>
+      <code>period.end.empty() or period.start &lt;= period.end</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -525,10 +539,10 @@ filterDesc(document.getElementById('EducationEncounterK'), 'obligation', documen
         <div id="tbl-diff-inner">
           <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" id="EducationEncounterD" class="xhtTableBorder0" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" class="xhtRowBorder1" data-fhir="generated-heirarchy"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Elementets logiska namn" data-no-external="true">Namn</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information om användningen av elementet" data-no-external="true">Flaggor</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Lägsta och högsta antal gånger elementet kan förekomma i instansen" data-no-external="true">Kard.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Referens till elementets typ" data-no-external="true">Typ</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Ytterligare information om elementet" data-no-external="true">Beskrivning &amp; begränsningar</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('EducationEncounterD'), event.target.value)" type="text" aria-label="Filter"/> <button onClick="showPanel(this, document.getElementById('EducationEncounterD'), document.getElementById('ppEducationEncounterD'))" aria-controls="ppEducationEncounterD" style="background: none; border: 0; padding: 0; margin: 0; cursor: pointer" type="button" title="Filters" aria-label="Filters"><img src="tree-filter.png" alt=""/></button><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppEducationEncounterD"><label>Begränsningar <input onClick="filterDesc(document.getElementById('EducationEncounterD'), 'constraint',event.target.checked, document.getElementById('ppEducationEncounterD'))" size="1" name="constraint" checked="true" id="cbEducationEncounterD-constraint" type="checkbox" aria-label="constraint"/></label><br/><label>Bindningar <input onClick="filterDesc(document.getElementById('EducationEncounterD'), 'binding',event.target.checked, document.getElementById('ppEducationEncounterD'))" size="1" name="binding" checked="true" id="cbEducationEncounterD-binding" type="checkbox" aria-label="binding"/></label><br/><label>Skyldigheter <input onClick="filterDesc(document.getElementById('EducationEncounterD'), 'obligation',event.target.checked, document.getElementById('ppEducationEncounterD'))" size="1" name="obligation" checked="true" id="cbEducationEncounterD-obligation" type="checkbox" aria-label="obligation"/></label><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
 <tr fhir="generated-heirarchy" id="a" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resurs" class="hierarchy"/> <a no-external="true" href="StructureDefinition-EducationEncounter-definitions.html#Encounter" data-no-external="true">Encounter</a><a name="Encounter"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="Detta element har eller påverkas av begränsningar ( edu-enc-1, edu-enc-2 )" class="xhtConstraintStyle">C</a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></td>
-<td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">An interaction during which services are provided to the patient</span></td></tr>
+<td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">An interaction during which services are provided to the patient</span><br class="constraint"/><span class="constraint">Constraints: </span><span title="En avslutad vårdkontakt (status = finished) ska ha en sluttid (period.end)." class="xhtPieceBold constraint">edu-enc-1</span><span class="constraint">, </span><span title="Sluttiden bör inte ligga före starttiden." class="xhtPieceBold constraint">edu-enc-2</span></td></tr>
 <tr fhir="generated-heirarchy" id="aa" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Encounter.</span><a no-external="true" href="StructureDefinition-EducationEncounter-definitions.html#Encounter.status" data-no-external="true">status</a><a name="Encounter.status"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="Detta element måste stödjas">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element måste stödjas. </span></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td>
@@ -538,12 +552,12 @@ filterDesc(document.getElementById('EducationEncounterK'), 'obligation', documen
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="Detta element måste stödjas">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element måste stödjas. </span></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding" class="xhtPieceDeEmphasized">Coding</a></td>
-<td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Classification of patient encounter</span></td></tr>
+<td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Classification of patient encounter</span><br class="binding"/><span class="xhtPieceBold binding">Bindning: </span><a href="ValueSet-education-encounter-class.html" title="http://example.org/fhir/education/kursig/ValueSet/education-encounter-class" class="binding">Klass av vårdkontakt</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" id="ac" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Encounter.</span><a no-external="true" href="StructureDefinition-EducationEncounter-definitions.html#Encounter.type" data-no-external="true">type</a><a name="Encounter.type"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="Detta element måste stödjas">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element måste stödjas. </span></td>
 <td style="" class="hierarchy xhtCellBorder0">1..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td>
-<td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Specific type of encounter</span></td></tr>
+<td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Specific type of encounter</span><br class="binding"/><span class="xhtPieceBold binding">Bindning: </span><a href="ValueSet-kontakttyp-vs.html" title="http://example.org/fhir/education/kursig/ValueSet/kontakttyp-vs" class="binding">Kontakttyp – ValueSet</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" id="ad" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="" style="background-color: white; background-color: inherit" title="Referens till en annan resurs" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Encounter.</span><a no-external="true" href="StructureDefinition-EducationEncounter-definitions.html#Encounter.subject" data-no-external="true">subject</a><a name="Encounter.subject"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="Detta element måste stödjas">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element måste stödjas. </span></td>
 <td style="" class="hierarchy xhtCellBorder0">1..<span class="xhtPieceDeEmphasized">1</span></td>
@@ -584,7 +598,7 @@ filterDesc(document.getElementById('EducationEncounterK'), 'obligation', documen
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#uri" class="xhtPieceDeEmphasized">uri</a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">The namespace for the identifier value</span><br/><span class="xhtPieceBold">Obligatoriskt mönster: </span><span class="xhtPieceDarkGreen">urn:oid:1.2.752.29.4.19</span> (extensions allowed)</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Förklaring för detta format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Dokumentation för detta format</a></td></tr><script type="text/javascript">  // 3931089b-4069-445d-99e1-0a506cb82d7c
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Förklaring för detta format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Dokumentation för detta format</a></td></tr><script type="text/javascript">  // e8a12ec2-a6e0-41c2-8aa4-8035044e15c9
 document.getElementById('cbEducationEncounterD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('EducationEncounterD'), 'constraint', document.getElementById('cbEducationEncounterD-constraint').checked, document.getElementById('ppEducationEncounterD'));
 document.getElementById('cbEducationEncounterD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
@@ -594,10 +608,101 @@ filterDesc(document.getElementById('EducationEncounterD'), 'obligation', documen
 </script></table>
           <a name="tx"> </a>
           <!--Terminology Bindings heading in the fragment -->
-          
+          <h4>Terminologibindningar (differential)</h4>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Sökväg</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Användning</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Källa</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.class</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td>
+      <a style="opacity: 0.50" href="ValueSet-education-encounter-class.html">Klass av vårdkontakt</a>
+      <button data-clipboard-text="http://example.org/fhir/education/kursig/ValueSet/education-encounter-class" title="Klicka för att kopiera URL" class="btn-copy" aria-label="copy"></button>
+    </td>
+    <td title="Versionen är inte uttryckligen angiven, vilket innebär att den är fast till den version som tillhandahålls i denna specifikation">&#x1F4E6;0.1.0</td>
+    <td>Denna IG</td>
+  </tr>
+  <tr>
+    <td>Encounter.type</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td>
+      <a style="opacity: 0.50" href="ValueSet-kontakttyp-vs.html">Kontakttyp – ValueSet</a>
+      <button data-clipboard-text="http://example.org/fhir/education/kursig/ValueSet/kontakttyp-vs" title="Klicka för att kopiera URL" class="btn-copy" aria-label="copy"></button>
+    </td>
+    <td title="Versionen är inte uttryckligen angiven, vilket innebär att den är fast till den version som tillhandahålls i denna specifikation">&#x1F4E6;0.1.0</td>
+    <td>Denna IG</td>
+  </tr>
+</table>
+
         
           
           <!-- 218 is size of empty table -->
+          
+            <a name="inv-diff"> </a>
+            <!--Constraints  heading in the fragment -->
+            <h4>Begränsningar</h4>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grad</b>
+    </td>
+    <td>
+      <b>Sökväg(ar)</b>
+    </td>
+    <td>
+      <b>Beskrivning</b>
+    </td>
+    <td>
+      <b>Uttryck</b>
+    </td>
+  </tr>
+  <tr>
+    <td>edu-enc-1</td>
+    <td>error</td>
+    <td>Encounter</td>
+    <td>En avslutad vårdkontakt (status = finished) ska ha en sluttid (period.end).</td>
+    <td>
+      <code>status = 'finished' implies period.end.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>edu-enc-2</td>
+    <td>warning</td>
+    <td>Encounter</td>
+    <td>Sluttiden bör inte ligga före starttiden.</td>
+    <td>
+      <code>period.end.empty() or period.start &lt;= period.end</code>
+    </td>
+  </tr>
+</table>
+
           
         </div>
       </div>
@@ -608,10 +713,10 @@ filterDesc(document.getElementById('EducationEncounterD'), 'obligation', documen
         <div id="tbl-snap-inner">
           <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" id="EducationEncounterS" class="xhtTableBorder0" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" class="xhtRowBorder1" data-fhir="generated-heirarchy"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Elementets logiska namn" data-no-external="true">Namn</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information om användningen av elementet" data-no-external="true">Flaggor</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Lägsta och högsta antal gånger elementet kan förekomma i instansen" data-no-external="true">Kard.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Referens till elementets typ" data-no-external="true">Typ</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Ytterligare information om elementet" data-no-external="true">Beskrivning &amp; begränsningar</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('EducationEncounterS'), event.target.value)" type="text" aria-label="Filter"/> <button onClick="showPanel(this, document.getElementById('EducationEncounterS'), document.getElementById('ppEducationEncounterS'))" aria-controls="ppEducationEncounterS" style="background: none; border: 0; padding: 0; margin: 0; cursor: pointer" type="button" title="Filters" aria-label="Filters"><img src="tree-filter.png" alt=""/></button><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppEducationEncounterS"><label>Begränsningar <input onClick="filterDesc(document.getElementById('EducationEncounterS'), 'constraint',event.target.checked, document.getElementById('ppEducationEncounterS'))" size="1" name="constraint" checked="true" id="cbEducationEncounterS-constraint" type="checkbox" aria-label="constraint"/></label><br/><label>Bindningar <input onClick="filterDesc(document.getElementById('EducationEncounterS'), 'binding',event.target.checked, document.getElementById('ppEducationEncounterS'))" size="1" name="binding" checked="true" id="cbEducationEncounterS-binding" type="checkbox" aria-label="binding"/></label><br/><label>Skyldigheter <input onClick="filterDesc(document.getElementById('EducationEncounterS'), 'obligation',event.target.checked, document.getElementById('ppEducationEncounterS'))" size="1" name="obligation" checked="true" id="cbEducationEncounterS-obligation" type="checkbox" aria-label="obligation"/></label><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
 <tr fhir="generated-heirarchy" id="s-a" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resurs" class="hierarchy"/> <a no-external="true" href="StructureDefinition-EducationEncounter-definitions.html#Encounter" title="An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient." data-no-external="true">Encounter</a><a name="s-Encounter"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="Detta element har eller påverkas av begränsningar ( edu-enc-1, edu-enc-2 )" class="xhtConstraintStyle">C</a></td>
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></td>
-<td style="" class="hierarchy xhtCellBorder0">An interaction during which services are provided to the patient<br/></td></tr>
+<td style="" class="hierarchy xhtCellBorder0">An interaction during which services are provided to the patient<br class="constraint"/><span class="constraint">Constraints: </span><span title="En avslutad vårdkontakt (status = finished) ska ha en sluttid (period.end)." class="xhtPieceBold constraint">edu-enc-1</span><span class="constraint">, </span><span title="Sluttiden bör inte ligga före starttiden." class="xhtPieceBold constraint">edu-enc-2</span><br/></td></tr>
 <tr fhir="generated-heirarchy" id="s-a0." class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitiv datatyp" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Encounter.</span><a no-external="true" href="StructureDefinition-EducationEncounter-definitions.html#Encounter.id" title="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes." data-no-external="true">id</a><a name="s-Encounter.id"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="Detta element ingår i sammanfattningar">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element ingår i sammanfattningar. </span></td>
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
@@ -703,7 +808,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="Detta element måste stödjas">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element måste stödjas. </span><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="Detta element ingår i sammanfattningar">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element ingår i sammanfattningar. </span></td>
 <td style="" class="hierarchy xhtCellBorder0">1..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Classification of patient encounter<br class="binding"/><span class="xhtPieceBold binding">Bindning: </span><a href="http://terminology.hl7.org/7.5.0/ValueSet-v3-ActEncounterCode.html" title="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode" class="binding">ActEncounterCode</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span><span class="binding">: </span><span class="binding">Classification of the encounter.</span></td></tr>
+<td style="" class="hierarchy xhtCellBorder0">Classification of patient encounter<br class="binding"/><span class="xhtPieceBold binding">Bindning: </span><a href="ValueSet-education-encounter-class.html" title="http://example.org/fhir/education/kursig/ValueSet/education-encounter-class" class="binding">Klass av vårdkontakt</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" id="s-a12." class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Datatyp" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Encounter.</span><a no-external="true" href="StructureDefinition-EducationEncounter-definitions.html#Encounter.classHistory" title="The class history permits the tracking of the encounters transitions without needing to go  through the resource history.  This would be used for a case where an admission starts of as an emergency encounter, then transitions into an inpatient scenario. Doing this and not restarting a new encounter ensures that any lab/diagnostic results can more easily follow the patient and not require re-processing and not get lost or cancelled during a kind of discharge from emergency to inpatient." data-no-external="true">classHistory</a><a name="s-Encounter.classHistory"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
@@ -740,7 +845,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="Detta element måste stödjas">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element måste stödjas. </span><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="Detta element ingår i sammanfattningar">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element ingår i sammanfattningar. </span></td>
 <td style="" class="hierarchy xhtCellBorder0">1..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Specific type of encounter<br class="binding"/><span class="xhtPieceBold binding">Bindning: </span><a href="http://hl7.org/fhir/R4/valueset-encounter-type.html" title="http://hl7.org/fhir/ValueSet/encounter-type" class="binding">EncounterType</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span class="binding">)</span><span class="binding">: </span><span class="binding">The type of encounter.</span><br/></td></tr>
+<td style="" class="hierarchy xhtCellBorder0">Specific type of encounter<br class="binding"/><span class="xhtPieceBold binding">Bindning: </span><a href="ValueSet-kontakttyp-vs.html" title="http://example.org/fhir/education/kursig/ValueSet/kontakttyp-vs" class="binding">Kontakttyp – ValueSet</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span><br/></td></tr>
 <tr fhir="generated-heirarchy" id="s-a14." class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Datatyp" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Encounter.</span><a no-external="true" href="StructureDefinition-EducationEncounter-definitions.html#Encounter.serviceType" title="Broad categorization of the service that is to be provided (e.g. cardiology)." data-no-external="true">serviceType</a><a name="s-Encounter.serviceType"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="Detta element ingår i sammanfattningar">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element ingår i sammanfattningar. </span></td>
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
@@ -1081,7 +1186,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>)</td>
 <td style="" class="hierarchy xhtCellBorder0">Another Encounter this encounter is part of</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Förklaring för detta format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Dokumentation för detta format</a></td></tr><script type="text/javascript">  // 3931089b-4069-445d-99e1-0a506cb82d7c
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Förklaring för detta format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Dokumentation för detta format</a></td></tr><script type="text/javascript">  // e8a12ec2-a6e0-41c2-8aa4-8035044e15c9
 document.getElementById('cbEducationEncounterS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('EducationEncounterS'), 'constraint', document.getElementById('cbEducationEncounterS-constraint').checked, document.getElementById('ppEducationEncounterS'));
 document.getElementById('cbEducationEncounterS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
@@ -1161,16 +1266,14 @@ filterDesc(document.getElementById('EducationEncounterS'), 'obligation', documen
     <td>Encounter.class</td>
     <td>Base</td>
     <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
     </td>
-    <td title="Classification of the encounter.">
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.5.0/ValueSet-v3-ActEncounterCode.html">ActEncounterCode</a>
-      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode" title="Klicka för att kopiera URL" class="btn-copy" aria-label="copy"></button>
-    </td>
-    <td title="Versionen är inte uttryckligen angiven, vilket innebär att den är fast till 3.0.0, versionen som hittas via paketreferenserna">&#x1F4E6;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.5.0">THO v7.5</a>
+      <a style="opacity: 1.0" href="ValueSet-education-encounter-class.html">Klass av vårdkontakt</a>
+      <button data-clipboard-text="http://example.org/fhir/education/kursig/ValueSet/education-encounter-class" title="Klicka för att kopiera URL" class="btn-copy" aria-label="copy"></button>
     </td>
+    <td title="Versionen är inte uttryckligen angiven, vilket innebär att den är fast till den version som tillhandahålls i denna specifikation">&#x1F4E6;0.1.0</td>
+    <td>Denna IG</td>
   </tr>
   <tr>
     <td>Encounter.classHistory.​class</td>
@@ -1191,16 +1294,14 @@ filterDesc(document.getElementById('EducationEncounterS'), 'obligation', documen
     <td>Encounter.type</td>
     <td>Base</td>
     <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
     </td>
-    <td title="The type of encounter.">
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-encounter-type.html">Encounter type</a>
-      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-type|4.0.1" title="Klicka för att kopiera URL" class="btn-copy" aria-label="copy"></button>
-    </td>
-    <td title="Versionen anges uttryckligen vara 4.0.1">&#x1F4CD;4.0.1</td>
     <td>
-      <a href="https://hl7.org/fhir/R4/">FHIR-std.</a>
+      <a style="opacity: 1.0" href="ValueSet-kontakttyp-vs.html">Kontakttyp – ValueSet</a>
+      <button data-clipboard-text="http://example.org/fhir/education/kursig/ValueSet/kontakttyp-vs" title="Klicka för att kopiera URL" class="btn-copy" aria-label="copy"></button>
     </td>
+    <td title="Versionen är inte uttryckligen angiven, vilket innebär att den är fast till den version som tillhandahålls i denna specifikation">&#x1F4E6;0.1.0</td>
+    <td>Denna IG</td>
   </tr>
   <tr>
     <td>Encounter.serviceType</td>
@@ -1469,6 +1570,24 @@ filterDesc(document.getElementById('EducationEncounterS'), 'obligation', documen
       <b>Uttryck</b>
     </td>
   </tr>
+  <tr>
+    <td>edu-enc-1</td>
+    <td>error</td>
+    <td>Encounter</td>
+    <td>En avslutad vårdkontakt (status = finished) ska ha en sluttid (period.end).</td>
+    <td>
+      <code>status = 'finished' implies period.end.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>edu-enc-2</td>
+    <td>warning</td>
+    <td>Encounter</td>
+    <td>Sluttiden bör inte ligga före starttiden.</td>
+    <td>
+      <code>period.end.empty() or period.start &lt;= period.end</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -1637,10 +1756,10 @@ Sammanfattning
         <div id="all-tbl-key-inner">
           <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" id="EducationEncounterKA" class="xhtTableBorder0" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" class="xhtRowBorder1" data-fhir="generated-heirarchy"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Elementets logiska namn" data-no-external="true">Namn</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information om användningen av elementet" data-no-external="true">Flaggor</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Lägsta och högsta antal gånger elementet kan förekomma i instansen" data-no-external="true">Kard.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Referens till elementets typ" data-no-external="true">Typ</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Ytterligare information om elementet" data-no-external="true">Beskrivning &amp; begränsningar</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('EducationEncounterKA'), event.target.value)" type="text" aria-label="Filter"/> <button onClick="showPanel(this, document.getElementById('EducationEncounterKA'), document.getElementById('ppEducationEncounterKA'))" aria-controls="ppEducationEncounterKA" style="background: none; border: 0; padding: 0; margin: 0; cursor: pointer" type="button" title="Filters" aria-label="Filters"><img src="tree-filter.png" alt=""/></button><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppEducationEncounterKA"><label>Begränsningar <input onClick="filterDesc(document.getElementById('EducationEncounterKA'), 'constraint',event.target.checked, document.getElementById('ppEducationEncounterKA'))" size="1" name="constraint" checked="true" id="cbEducationEncounterKA-constraint" type="checkbox" aria-label="constraint"/></label><br/><label>Bindningar <input onClick="filterDesc(document.getElementById('EducationEncounterKA'), 'binding',event.target.checked, document.getElementById('ppEducationEncounterKA'))" size="1" name="binding" checked="true" id="cbEducationEncounterKA-binding" type="checkbox" aria-label="binding"/></label><br/><label>Skyldigheter <input onClick="filterDesc(document.getElementById('EducationEncounterKA'), 'obligation',event.target.checked, document.getElementById('ppEducationEncounterKA'))" size="1" name="obligation" checked="true" id="cbEducationEncounterKA-obligation" type="checkbox" aria-label="obligation"/></label><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
 <tr fhir="generated-heirarchy" id="ka-a" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resurs" class="hierarchy"/> <a no-external="true" href="StructureDefinition-EducationEncounter-definitions.html#Encounter" title="An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient." data-no-external="true">Encounter</a><a name="ka-Encounter"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="Detta element har eller påverkas av begränsningar ( edu-enc-1, edu-enc-2 )" class="xhtConstraintStyle">C</a></td>
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></td>
-<td style="" class="hierarchy xhtCellBorder0">An interaction during which services are provided to the patient<br/></td></tr>
+<td style="" class="hierarchy xhtCellBorder0">An interaction during which services are provided to the patient<br class="constraint"/><span class="constraint">Constraints: </span><span title="En avslutad vårdkontakt (status = finished) ska ha en sluttid (period.end)." class="xhtPieceBold constraint">edu-enc-1</span><span class="constraint">, </span><span title="Sluttiden bör inte ligga före starttiden." class="xhtPieceBold constraint">edu-enc-2</span><br/></td></tr>
 <tr fhir="generated-heirarchy" id="ka-aa" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitiv datatyp" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Encounter.</span><a no-external="true" href="StructureDefinition-EducationEncounter-definitions.html#Encounter.implicitRules" title="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc." data-no-external="true">implicitRules</a><a name="ka-Encounter.implicitRules"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="Detta element är ett modifierande element">?!</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element är ett modifierande element. </span><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="Detta element ingår i sammanfattningar">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element ingår i sammanfattningar. </span></td>
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
@@ -1662,12 +1781,12 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="Detta element måste stödjas">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element måste stödjas. </span><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="Detta element ingår i sammanfattningar">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element ingår i sammanfattningar. </span></td>
 <td style="" class="hierarchy xhtCellBorder0">1..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Classification of patient encounter<br class="binding"/><span class="xhtPieceBold binding">Bindning: </span><a href="http://terminology.hl7.org/7.5.0/ValueSet-v3-ActEncounterCode.html" title="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode" class="binding">ActEncounterCode</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span><span class="binding">: </span><span class="binding">Classification of the encounter.</span></td></tr>
+<td style="" class="hierarchy xhtCellBorder0">Classification of patient encounter<br class="binding"/><span class="xhtPieceBold binding">Bindning: </span><a href="ValueSet-education-encounter-class.html" title="http://example.org/fhir/education/kursig/ValueSet/education-encounter-class" class="binding">Klass av vårdkontakt</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" id="ka-ae" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Datatyp" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Encounter.</span><a no-external="true" href="StructureDefinition-EducationEncounter-definitions.html#Encounter.type" title="Specific type of encounter (e.g. e-mail consultation, surgical day-care, skilled nursing, rehabilitation)." data-no-external="true">type</a><a name="ka-Encounter.type"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="Detta element måste stödjas">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element måste stödjas. </span><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="Detta element ingår i sammanfattningar">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element ingår i sammanfattningar. </span></td>
 <td style="" class="hierarchy xhtCellBorder0">1..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Specific type of encounter<br class="binding"/><span class="xhtPieceBold binding">Bindning: </span><a href="http://hl7.org/fhir/R4/valueset-encounter-type.html" title="http://hl7.org/fhir/ValueSet/encounter-type" class="binding">EncounterType</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span class="binding">)</span><span class="binding">: </span><span class="binding">The type of encounter.</span><br/></td></tr>
+<td style="" class="hierarchy xhtCellBorder0">Specific type of encounter<br class="binding"/><span class="xhtPieceBold binding">Bindning: </span><a href="ValueSet-kontakttyp-vs.html" title="http://example.org/fhir/education/kursig/ValueSet/kontakttyp-vs" class="binding">Kontakttyp – ValueSet</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span><br/></td></tr>
 <tr fhir="generated-heirarchy" id="ka-af" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="" style="background-color: white; background-color: inherit" title="Referens till en annan resurs" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Encounter.</span><a no-external="true" href="StructureDefinition-EducationEncounter-definitions.html#Encounter.subject" title="The patient or group present at the encounter." data-no-external="true">subject</a><a name="ka-Encounter.subject"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="Detta element måste stödjas">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element måste stödjas. </span><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="Detta element ingår i sammanfattningar">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element ingår i sammanfattningar. </span></td>
 <td style="" class="hierarchy xhtCellBorder0">1..1</td>
@@ -1713,7 +1832,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
 <td style="" class="hierarchy xhtCellBorder0">The namespace for the identifier value<br/><span class="xhtPieceBold">Obligatoriskt mönster: </span><span class="xhtPieceDarkGreen">urn:oid:1.2.752.29.4.19</span> (extensions allowed)</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Förklaring för detta format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Dokumentation för detta format</a></td></tr><script type="text/javascript">  // 3931089b-4069-445d-99e1-0a506cb82d7c
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Förklaring för detta format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Dokumentation för detta format</a></td></tr><script type="text/javascript">  // e8a12ec2-a6e0-41c2-8aa4-8035044e15c9
 document.getElementById('cbEducationEncounterKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('EducationEncounterKA'), 'constraint', document.getElementById('cbEducationEncounterKA-constraint').checked, document.getElementById('ppEducationEncounterKA'));
 document.getElementById('cbEducationEncounterKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
@@ -1763,31 +1882,27 @@ filterDesc(document.getElementById('EducationEncounterKA'), 'obligation', docume
     <td>Encounter.class</td>
     <td>Base</td>
     <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
     </td>
-    <td title="Classification of the encounter.">
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.5.0/ValueSet-v3-ActEncounterCode.html">ActEncounterCode</a>
-      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode" title="Klicka för att kopiera URL" class="btn-copy" aria-label="copy"></button>
-    </td>
-    <td title="Versionen är inte uttryckligen angiven, vilket innebär att den är fast till 3.0.0, versionen som hittas via paketreferenserna">&#x1F4E6;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.5.0">THO v7.5</a>
+      <a style="opacity: 1.0" href="ValueSet-education-encounter-class.html">Klass av vårdkontakt</a>
+      <button data-clipboard-text="http://example.org/fhir/education/kursig/ValueSet/education-encounter-class" title="Klicka för att kopiera URL" class="btn-copy" aria-label="copy"></button>
     </td>
+    <td title="Versionen är inte uttryckligen angiven, vilket innebär att den är fast till den version som tillhandahålls i denna specifikation">&#x1F4E6;0.1.0</td>
+    <td>Denna IG</td>
   </tr>
   <tr>
     <td>Encounter.type</td>
     <td>Base</td>
     <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
     </td>
-    <td title="The type of encounter.">
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-encounter-type.html">Encounter type</a>
-      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-type|4.0.1" title="Klicka för att kopiera URL" class="btn-copy" aria-label="copy"></button>
-    </td>
-    <td title="Versionen anges uttryckligen vara 4.0.1">&#x1F4CD;4.0.1</td>
     <td>
-      <a href="https://hl7.org/fhir/R4/">FHIR-std.</a>
+      <a style="opacity: 1.0" href="ValueSet-kontakttyp-vs.html">Kontakttyp – ValueSet</a>
+      <button data-clipboard-text="http://example.org/fhir/education/kursig/ValueSet/kontakttyp-vs" title="Klicka för att kopiera URL" class="btn-copy" aria-label="copy"></button>
     </td>
+    <td title="Versionen är inte uttryckligen angiven, vilket innebär att den är fast till den version som tillhandahålls i denna specifikation">&#x1F4E6;0.1.0</td>
+    <td>Denna IG</td>
   </tr>
   <tr>
     <td>Encounter.reasonCode</td>
@@ -1846,6 +1961,24 @@ filterDesc(document.getElementById('EducationEncounterKA'), 'obligation', docume
       <b>Uttryck</b>
     </td>
   </tr>
+  <tr>
+    <td>edu-enc-1</td>
+    <td>error</td>
+    <td>Encounter</td>
+    <td>En avslutad vårdkontakt (status = finished) ska ha en sluttid (period.end).</td>
+    <td>
+      <code>status = 'finished' implies period.end.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>edu-enc-2</td>
+    <td>warning</td>
+    <td>Encounter</td>
+    <td>Sluttiden bör inte ligga före starttiden.</td>
+    <td>
+      <code>period.end.empty() or period.start &lt;= period.end</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -1860,10 +1993,10 @@ filterDesc(document.getElementById('EducationEncounterKA'), 'obligation', docume
         <div id="all-tbl-diff-inner">
           <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" id="EducationEncounterDA" class="xhtTableBorder0" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" class="xhtRowBorder1" data-fhir="generated-heirarchy"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Elementets logiska namn" data-no-external="true">Namn</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information om användningen av elementet" data-no-external="true">Flaggor</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Lägsta och högsta antal gånger elementet kan förekomma i instansen" data-no-external="true">Kard.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Referens till elementets typ" data-no-external="true">Typ</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Ytterligare information om elementet" data-no-external="true">Beskrivning &amp; begränsningar</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('EducationEncounterDA'), event.target.value)" type="text" aria-label="Filter"/> <button onClick="showPanel(this, document.getElementById('EducationEncounterDA'), document.getElementById('ppEducationEncounterDA'))" aria-controls="ppEducationEncounterDA" style="background: none; border: 0; padding: 0; margin: 0; cursor: pointer" type="button" title="Filters" aria-label="Filters"><img src="tree-filter.png" alt=""/></button><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppEducationEncounterDA"><label>Begränsningar <input onClick="filterDesc(document.getElementById('EducationEncounterDA'), 'constraint',event.target.checked, document.getElementById('ppEducationEncounterDA'))" size="1" name="constraint" checked="true" id="cbEducationEncounterDA-constraint" type="checkbox" aria-label="constraint"/></label><br/><label>Bindningar <input onClick="filterDesc(document.getElementById('EducationEncounterDA'), 'binding',event.target.checked, document.getElementById('ppEducationEncounterDA'))" size="1" name="binding" checked="true" id="cbEducationEncounterDA-binding" type="checkbox" aria-label="binding"/></label><br/><label>Skyldigheter <input onClick="filterDesc(document.getElementById('EducationEncounterDA'), 'obligation',event.target.checked, document.getElementById('ppEducationEncounterDA'))" size="1" name="obligation" checked="true" id="cbEducationEncounterDA-obligation" type="checkbox" aria-label="obligation"/></label><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
 <tr fhir="generated-heirarchy" id="a-a" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resurs" class="hierarchy"/> <a no-external="true" href="StructureDefinition-EducationEncounter-definitions.html#Encounter" data-no-external="true">Encounter</a><a name="a-Encounter"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="Detta element har eller påverkas av begränsningar ( edu-enc-1, edu-enc-2 )" class="xhtConstraintStyle">C</a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></td>
-<td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">An interaction during which services are provided to the patient</span></td></tr>
+<td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">An interaction during which services are provided to the patient</span><br class="constraint"/><span class="constraint">Constraints: </span><span title="En avslutad vårdkontakt (status = finished) ska ha en sluttid (period.end)." class="xhtPieceBold constraint">edu-enc-1</span><span class="constraint">, </span><span title="Sluttiden bör inte ligga före starttiden." class="xhtPieceBold constraint">edu-enc-2</span></td></tr>
 <tr fhir="generated-heirarchy" id="a-aa" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Encounter.</span><a no-external="true" href="StructureDefinition-EducationEncounter-definitions.html#Encounter.status" data-no-external="true">status</a><a name="a-Encounter.status"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="Detta element måste stödjas">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element måste stödjas. </span></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td>
@@ -1873,12 +2006,12 @@ filterDesc(document.getElementById('EducationEncounterKA'), 'obligation', docume
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="Detta element måste stödjas">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element måste stödjas. </span></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding" class="xhtPieceDeEmphasized">Coding</a></td>
-<td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Classification of patient encounter</span></td></tr>
+<td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Classification of patient encounter</span><br class="binding"/><span class="xhtPieceBold binding">Bindning: </span><a href="ValueSet-education-encounter-class.html" title="http://example.org/fhir/education/kursig/ValueSet/education-encounter-class" class="binding">Klass av vårdkontakt</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" id="a-ac" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Encounter.</span><a no-external="true" href="StructureDefinition-EducationEncounter-definitions.html#Encounter.type" data-no-external="true">type</a><a name="a-Encounter.type"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="Detta element måste stödjas">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element måste stödjas. </span></td>
 <td style="" class="hierarchy xhtCellBorder0">1..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td>
-<td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Specific type of encounter</span></td></tr>
+<td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Specific type of encounter</span><br class="binding"/><span class="xhtPieceBold binding">Bindning: </span><a href="ValueSet-kontakttyp-vs.html" title="http://example.org/fhir/education/kursig/ValueSet/kontakttyp-vs" class="binding">Kontakttyp – ValueSet</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" id="a-ad" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="" style="background-color: white; background-color: inherit" title="Referens till en annan resurs" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Encounter.</span><a no-external="true" href="StructureDefinition-EducationEncounter-definitions.html#Encounter.subject" data-no-external="true">subject</a><a name="a-Encounter.subject"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="Detta element måste stödjas">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element måste stödjas. </span></td>
 <td style="" class="hierarchy xhtCellBorder0">1..<span class="xhtPieceDeEmphasized">1</span></td>
@@ -1919,7 +2052,7 @@ filterDesc(document.getElementById('EducationEncounterKA'), 'obligation', docume
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#uri" class="xhtPieceDeEmphasized">uri</a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">The namespace for the identifier value</span><br/><span class="xhtPieceBold">Obligatoriskt mönster: </span><span class="xhtPieceDarkGreen">urn:oid:1.2.752.29.4.19</span> (extensions allowed)</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Förklaring för detta format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Dokumentation för detta format</a></td></tr><script type="text/javascript">  // 3931089b-4069-445d-99e1-0a506cb82d7c
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Förklaring för detta format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Dokumentation för detta format</a></td></tr><script type="text/javascript">  // e8a12ec2-a6e0-41c2-8aa4-8035044e15c9
 document.getElementById('cbEducationEncounterDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('EducationEncounterDA'), 'constraint', document.getElementById('cbEducationEncounterDA-constraint').checked, document.getElementById('ppEducationEncounterDA'));
 document.getElementById('cbEducationEncounterDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
@@ -1928,10 +2061,101 @@ document.getElementById('cbEducationEncounterDA-obligation').checked = 'false' !
 filterDesc(document.getElementById('EducationEncounterDA'), 'obligation', document.getElementById('cbEducationEncounterDA-obligation').checked, document.getElementById('ppEducationEncounterDA'));
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
-          
+          <h4>Terminologibindningar (differential)</h4>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Sökväg</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Användning</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Källa</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Encounter.class</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td>
+      <a style="opacity: 0.50" href="ValueSet-education-encounter-class.html">Klass av vårdkontakt</a>
+      <button data-clipboard-text="http://example.org/fhir/education/kursig/ValueSet/education-encounter-class" title="Klicka för att kopiera URL" class="btn-copy" aria-label="copy"></button>
+    </td>
+    <td title="Versionen är inte uttryckligen angiven, vilket innebär att den är fast till den version som tillhandahålls i denna specifikation">&#x1F4E6;0.1.0</td>
+    <td>Denna IG</td>
+  </tr>
+  <tr>
+    <td>Encounter.type</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td>
+      <a style="opacity: 0.50" href="ValueSet-kontakttyp-vs.html">Kontakttyp – ValueSet</a>
+      <button data-clipboard-text="http://example.org/fhir/education/kursig/ValueSet/kontakttyp-vs" title="Klicka för att kopiera URL" class="btn-copy" aria-label="copy"></button>
+    </td>
+    <td title="Versionen är inte uttryckligen angiven, vilket innebär att den är fast till den version som tillhandahålls i denna specifikation">&#x1F4E6;0.1.0</td>
+    <td>Denna IG</td>
+  </tr>
+</table>
+
         
           
           <!-- 218 is size of empty table -->
+          
+            <a name="inv-all-diff"> </a>
+            <!--Constraints  heading in the fragment -->
+            <h4>Begränsningar</h4>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grad</b>
+    </td>
+    <td>
+      <b>Sökväg(ar)</b>
+    </td>
+    <td>
+      <b>Beskrivning</b>
+    </td>
+    <td>
+      <b>Uttryck</b>
+    </td>
+  </tr>
+  <tr>
+    <td>edu-enc-1</td>
+    <td>error</td>
+    <td>Encounter</td>
+    <td>En avslutad vårdkontakt (status = finished) ska ha en sluttid (period.end).</td>
+    <td>
+      <code>status = 'finished' implies period.end.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>edu-enc-2</td>
+    <td>warning</td>
+    <td>Encounter</td>
+    <td>Sluttiden bör inte ligga före starttiden.</td>
+    <td>
+      <code>period.end.empty() or period.start &lt;= period.end</code>
+    </td>
+  </tr>
+</table>
+
           
         </div>
       </div>
@@ -1942,10 +2166,10 @@ filterDesc(document.getElementById('EducationEncounterDA'), 'obligation', docume
         <div id="all-tbl-snap-inner">
           <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" id="EducationEncounterSA" class="xhtTableBorder0" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" class="xhtRowBorder1" data-fhir="generated-heirarchy"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Elementets logiska namn" data-no-external="true">Namn</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information om användningen av elementet" data-no-external="true">Flaggor</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Lägsta och högsta antal gånger elementet kan förekomma i instansen" data-no-external="true">Kard.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Referens till elementets typ" data-no-external="true">Typ</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Ytterligare information om elementet" data-no-external="true">Beskrivning &amp; begränsningar</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('EducationEncounterSA'), event.target.value)" type="text" aria-label="Filter"/> <button onClick="showPanel(this, document.getElementById('EducationEncounterSA'), document.getElementById('ppEducationEncounterSA'))" aria-controls="ppEducationEncounterSA" style="background: none; border: 0; padding: 0; margin: 0; cursor: pointer" type="button" title="Filters" aria-label="Filters"><img src="tree-filter.png" alt=""/></button><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppEducationEncounterSA"><label>Begränsningar <input onClick="filterDesc(document.getElementById('EducationEncounterSA'), 'constraint',event.target.checked, document.getElementById('ppEducationEncounterSA'))" size="1" name="constraint" checked="true" id="cbEducationEncounterSA-constraint" type="checkbox" aria-label="constraint"/></label><br/><label>Bindningar <input onClick="filterDesc(document.getElementById('EducationEncounterSA'), 'binding',event.target.checked, document.getElementById('ppEducationEncounterSA'))" size="1" name="binding" checked="true" id="cbEducationEncounterSA-binding" type="checkbox" aria-label="binding"/></label><br/><label>Skyldigheter <input onClick="filterDesc(document.getElementById('EducationEncounterSA'), 'obligation',event.target.checked, document.getElementById('ppEducationEncounterSA'))" size="1" name="obligation" checked="true" id="cbEducationEncounterSA-obligation" type="checkbox" aria-label="obligation"/></label><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
 <tr fhir="generated-heirarchy" id="sa-a" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resurs" class="hierarchy"/> <a no-external="true" href="StructureDefinition-EducationEncounter-definitions.html#Encounter" title="An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient." data-no-external="true">Encounter</a><a name="sa-Encounter"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="Detta element har eller påverkas av begränsningar ( edu-enc-1, edu-enc-2 )" class="xhtConstraintStyle">C</a></td>
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></td>
-<td style="" class="hierarchy xhtCellBorder0">An interaction during which services are provided to the patient<br/></td></tr>
+<td style="" class="hierarchy xhtCellBorder0">An interaction during which services are provided to the patient<br class="constraint"/><span class="constraint">Constraints: </span><span title="En avslutad vårdkontakt (status = finished) ska ha en sluttid (period.end)." class="xhtPieceBold constraint">edu-enc-1</span><span class="constraint">, </span><span title="Sluttiden bör inte ligga före starttiden." class="xhtPieceBold constraint">edu-enc-2</span><br/></td></tr>
 <tr fhir="generated-heirarchy" id="sa-a0." class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitiv datatyp" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Encounter.</span><a no-external="true" href="StructureDefinition-EducationEncounter-definitions.html#Encounter.id" title="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes." data-no-external="true">id</a><a name="sa-Encounter.id"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="Detta element ingår i sammanfattningar">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element ingår i sammanfattningar. </span></td>
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
@@ -2037,7 +2261,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="Detta element måste stödjas">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element måste stödjas. </span><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="Detta element ingår i sammanfattningar">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element ingår i sammanfattningar. </span></td>
 <td style="" class="hierarchy xhtCellBorder0">1..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Classification of patient encounter<br class="binding"/><span class="xhtPieceBold binding">Bindning: </span><a href="http://terminology.hl7.org/7.5.0/ValueSet-v3-ActEncounterCode.html" title="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode" class="binding">ActEncounterCode</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span><span class="binding">: </span><span class="binding">Classification of the encounter.</span></td></tr>
+<td style="" class="hierarchy xhtCellBorder0">Classification of patient encounter<br class="binding"/><span class="xhtPieceBold binding">Bindning: </span><a href="ValueSet-education-encounter-class.html" title="http://example.org/fhir/education/kursig/ValueSet/education-encounter-class" class="binding">Klass av vårdkontakt</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" id="sa-a12." class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Datatyp" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Encounter.</span><a no-external="true" href="StructureDefinition-EducationEncounter-definitions.html#Encounter.classHistory" title="The class history permits the tracking of the encounters transitions without needing to go  through the resource history.  This would be used for a case where an admission starts of as an emergency encounter, then transitions into an inpatient scenario. Doing this and not restarting a new encounter ensures that any lab/diagnostic results can more easily follow the patient and not require re-processing and not get lost or cancelled during a kind of discharge from emergency to inpatient." data-no-external="true">classHistory</a><a name="sa-Encounter.classHistory"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
@@ -2074,7 +2298,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="Detta element måste stödjas">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element måste stödjas. </span><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="Detta element ingår i sammanfattningar">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element ingår i sammanfattningar. </span></td>
 <td style="" class="hierarchy xhtCellBorder0">1..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Specific type of encounter<br class="binding"/><span class="xhtPieceBold binding">Bindning: </span><a href="http://hl7.org/fhir/R4/valueset-encounter-type.html" title="http://hl7.org/fhir/ValueSet/encounter-type" class="binding">EncounterType</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span class="binding">)</span><span class="binding">: </span><span class="binding">The type of encounter.</span><br/></td></tr>
+<td style="" class="hierarchy xhtCellBorder0">Specific type of encounter<br class="binding"/><span class="xhtPieceBold binding">Bindning: </span><a href="ValueSet-kontakttyp-vs.html" title="http://example.org/fhir/education/kursig/ValueSet/kontakttyp-vs" class="binding">Kontakttyp – ValueSet</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span><br/></td></tr>
 <tr fhir="generated-heirarchy" id="sa-a14." class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Datatyp" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Encounter.</span><a no-external="true" href="StructureDefinition-EducationEncounter-definitions.html#Encounter.serviceType" title="Broad categorization of the service that is to be provided (e.g. cardiology)." data-no-external="true">serviceType</a><a name="sa-Encounter.serviceType"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="Detta element ingår i sammanfattningar">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> Detta element ingår i sammanfattningar. </span></td>
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
@@ -2415,7 +2639,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>)</td>
 <td style="" class="hierarchy xhtCellBorder0">Another Encounter this encounter is part of</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Förklaring för detta format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Dokumentation för detta format</a></td></tr><script type="text/javascript">  // 3931089b-4069-445d-99e1-0a506cb82d7c
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Förklaring för detta format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Dokumentation för detta format</a></td></tr><script type="text/javascript">  // e8a12ec2-a6e0-41c2-8aa4-8035044e15c9
 document.getElementById('cbEducationEncounterSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('EducationEncounterSA'), 'constraint', document.getElementById('cbEducationEncounterSA-constraint').checked, document.getElementById('ppEducationEncounterSA'));
 document.getElementById('cbEducationEncounterSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
@@ -2495,16 +2719,14 @@ filterDesc(document.getElementById('EducationEncounterSA'), 'obligation', docume
     <td>Encounter.class</td>
     <td>Base</td>
     <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
     </td>
-    <td title="Classification of the encounter.">
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.5.0/ValueSet-v3-ActEncounterCode.html">ActEncounterCode</a>
-      <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode" title="Klicka för att kopiera URL" class="btn-copy" aria-label="copy"></button>
-    </td>
-    <td title="Versionen är inte uttryckligen angiven, vilket innebär att den är fast till 3.0.0, versionen som hittas via paketreferenserna">&#x1F4E6;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.5.0">THO v7.5</a>
+      <a style="opacity: 1.0" href="ValueSet-education-encounter-class.html">Klass av vårdkontakt</a>
+      <button data-clipboard-text="http://example.org/fhir/education/kursig/ValueSet/education-encounter-class" title="Klicka för att kopiera URL" class="btn-copy" aria-label="copy"></button>
     </td>
+    <td title="Versionen är inte uttryckligen angiven, vilket innebär att den är fast till den version som tillhandahålls i denna specifikation">&#x1F4E6;0.1.0</td>
+    <td>Denna IG</td>
   </tr>
   <tr>
     <td>Encounter.classHistory.​class</td>
@@ -2525,16 +2747,14 @@ filterDesc(document.getElementById('EducationEncounterSA'), 'obligation', docume
     <td>Encounter.type</td>
     <td>Base</td>
     <td>
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
     </td>
-    <td title="The type of encounter.">
-      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-encounter-type.html">Encounter type</a>
-      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/encounter-type|4.0.1" title="Klicka för att kopiera URL" class="btn-copy" aria-label="copy"></button>
-    </td>
-    <td title="Versionen anges uttryckligen vara 4.0.1">&#x1F4CD;4.0.1</td>
     <td>
-      <a href="https://hl7.org/fhir/R4/">FHIR-std.</a>
+      <a style="opacity: 1.0" href="ValueSet-kontakttyp-vs.html">Kontakttyp – ValueSet</a>
+      <button data-clipboard-text="http://example.org/fhir/education/kursig/ValueSet/kontakttyp-vs" title="Klicka för att kopiera URL" class="btn-copy" aria-label="copy"></button>
     </td>
+    <td title="Versionen är inte uttryckligen angiven, vilket innebär att den är fast till den version som tillhandahålls i denna specifikation">&#x1F4E6;0.1.0</td>
+    <td>Denna IG</td>
   </tr>
   <tr>
     <td>Encounter.serviceType</td>
@@ -2803,6 +3023,24 @@ filterDesc(document.getElementById('EducationEncounterSA'), 'obligation', docume
       <b>Uttryck</b>
     </td>
   </tr>
+  <tr>
+    <td>edu-enc-1</td>
+    <td>error</td>
+    <td>Encounter</td>
+    <td>En avslutad vårdkontakt (status = finished) ska ha en sluttid (period.end).</td>
+    <td>
+      <code>status = 'finished' implies period.end.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>edu-enc-2</td>
+    <td>warning</td>
+    <td>Encounter</td>
+    <td>Sluttiden bör inte ligga före starttiden.</td>
+    <td>
+      <code>period.end.empty() or period.start &lt;= period.end</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -2990,7 +3228,7 @@ Sammanfattning
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">FHIR-utbildning</a>.  Package fhir.education.kursig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 2, 2026 12:36+0000">2026-11-02</span>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">FHIR-utbildning</a>.  Package fhir.education.kursig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 2, 2026 12:48+0000">2026-11-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

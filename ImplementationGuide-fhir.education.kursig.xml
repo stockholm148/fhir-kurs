@@ -11,7 +11,7 @@
   <name value="FhirEducationKursIG"/>
   <title value="FHIR-utbildning Emmas variant – Kurs-IG"/>
   <status value="draft"/>
-  <date value="2026-11-02T12:36:27+00:00"/>
+  <date value="2026-11-02T12:48:09+00:00"/>
   <publisher value="FHIR-utbildning"/>
   <description value="En liten Implementation Guide som byggs upp steg för steg under FHIR-utbildningen."/>
   <jurisdiction>
@@ -299,6 +299,50 @@
       </reference>
       <name value="Education Patient"/>
       <description value="Patientprofil för FHIR-utbildningen. Profilen byggs ut steg för steg under kursen."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/education-encounter-class"/>
+      </reference>
+      <name value="Klass av vårdkontakt"/>
+      <description value="Ett urval av koder ur HL7 v3 ActCode som får användas i Encounter.class."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/kontakttyp"/>
+      </reference>
+      <name value="Kontakttyp"/>
+      <description value="Typ av vårdkontakt (fiktivt kodsystem för utbildningen)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/kontakttyp-vs"/>
+      </reference>
+      <name value="Kontakttyp – ValueSet"/>
+      <description value="Alla koder i kodsystemet Kontakttyp."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SkyddadIdentitet"/>
+      </reference>
+      <name value="Skyddad identitet"/>
+      <description value="Anger om patienten har skyddade personuppgifter (t.ex. sekretessmarkering eller skyddad folkbokföring)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

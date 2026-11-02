@@ -10,7 +10,7 @@
   "name" : "FhirEducationKursIG",
   "title" : "FHIR-utbildning Emmas variant – Kurs-IG",
   "status" : "draft",
-  "date" : "2026-11-02T12:36:27+00:00",
+  "date" : "2026-11-02T12:48:09+00:00",
   "publisher" : "FHIR-utbildning",
   "description" : "En liten Implementation Guide som byggs upp steg för steg under FHIR-utbildningen.",
   "jurisdiction" : [{
@@ -390,6 +390,54 @@
       },
       "name" : "Education Patient",
       "description" : "Patientprofil för FHIR-utbildningen. Profilen byggs ut steg för steg under kursen.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/education-encounter-class"
+      },
+      "name" : "Klass av vårdkontakt",
+      "description" : "Ett urval av koder ur HL7 v3 ActCode som får användas i Encounter.class.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/kontakttyp"
+      },
+      "name" : "Kontakttyp",
+      "description" : "Typ av vårdkontakt (fiktivt kodsystem för utbildningen).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/kontakttyp-vs"
+      },
+      "name" : "Kontakttyp – ValueSet",
+      "description" : "Alla koder i kodsystemet Kontakttyp.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SkyddadIdentitet"
+      },
+      "name" : "Skyddad identitet",
+      "description" : "Anger om patienten har skyddade personuppgifter (t.ex. sekretessmarkering eller skyddad folkbokföring).",
       "exampleBoolean" : false
     },
     {

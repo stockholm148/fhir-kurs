@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "FhirEducationKursIG"] ;
   fhir:ImplementationGuide.title [ fhir:value "FHIR-utbildning Emmas variant – Kurs-IG"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-11-02T12:36:27+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-11-02T12:48:09+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "FHIR-utbildning"] ;
   fhir:ImplementationGuide.description [ fhir:value "En liten Implementation Guide som byggs upp steg för steg under FHIR-utbildningen."] ;
   fhir:ImplementationGuide.jurisdiction [
@@ -453,6 +453,62 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 3 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/education/kursig/ValueSet/education-encounter-class> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/education-encounter-class" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Klass av vårdkontakt" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ett urval av koder ur HL7 v3 ActCode som får användas i Encounter.class." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/education/kursig/CodeSystem/kontakttyp> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/kontakttyp" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kontakttyp" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Typ av vårdkontakt (fiktivt kodsystem för utbildningen)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/education/kursig/ValueSet/kontakttyp-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/kontakttyp-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kontakttyp – ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Alla koder i kodsystemet Kontakttyp." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/education/kursig/StructureDefinition/SkyddadIdentitet> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/SkyddadIdentitet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Skyddad identitet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Anger om patienten har skyddade personuppgifter (t.ex. sekretessmarkering eller skyddad folkbokföring)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;

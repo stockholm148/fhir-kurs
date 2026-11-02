@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-EducationEncounter.c
   "name" : "EducationEncounter",
   "title" : "Education Encounter",
   "status" : "draft",
-  "date" : "2026-11-02T12:36:27+00:00",
+  "date" : "2026-11-02T12:48:09+00:00",
   "publisher" : "FHIR-utbildning",
   "description" : "Profil för en vårdkontakt i FHIR-utbildningen.",
   "jurisdiction" : [{
@@ -80,7 +80,21 @@ Other representations of profile: [CSV](StructureDefinition-EducationEncounter.c
   "differential" : {
     "element" : [{
       "id" : "Encounter",
-      "path" : "Encounter"
+      "path" : "Encounter",
+      "constraint" : [{
+        "key" : "edu-enc-1",
+        "severity" : "error",
+        "human" : "En avslutad vårdkontakt (status = finished) ska ha en sluttid (period.end).",
+        "expression" : "status = 'finished' implies period.end.exists()",
+        "source" : "http://example.org/fhir/education/kursig/StructureDefinition/EducationEncounter"
+      },
+      {
+        "key" : "edu-enc-2",
+        "severity" : "warning",
+        "human" : "Sluttiden bör inte ligga före starttiden.",
+        "expression" : "period.end.empty() or period.start <= period.end",
+        "source" : "http://example.org/fhir/education/kursig/StructureDefinition/EducationEncounter"
+      }]
     },
     {
       "id" : "Encounter.status",
@@ -90,14 +104,22 @@ Other representations of profile: [CSV](StructureDefinition-EducationEncounter.c
     {
       "id" : "Encounter.class",
       "path" : "Encounter.class",
-      "mustSupport" : true
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://example.org/fhir/education/kursig/ValueSet/education-encounter-class"
+      }
     },
     {
       "id" : "Encounter.type",
       "path" : "Encounter.type",
       "min" : 1,
       "max" : "1",
-      "mustSupport" : true
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://example.org/fhir/education/kursig/ValueSet/kontakttyp-vs"
+      }
     },
     {
       "id" : "Encounter.subject",

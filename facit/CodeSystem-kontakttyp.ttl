@@ -18,7 +18,7 @@
   fhir:CodeSystem.title [ fhir:value "Kontakttyp"] ;
   fhir:CodeSystem.status [ fhir:value "draft"] ;
   fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
-  fhir:CodeSystem.date [ fhir:value "2026-11-02T12:36:31+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-02T12:47:45+00:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "FHIR-utbildning"] ;
   fhir:CodeSystem.description [ fhir:value "Typ av vårdkontakt (fiktivt kodsystem för utbildningen)."] ;
   fhir:CodeSystem.jurisdiction [

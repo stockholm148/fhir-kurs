@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-EducationPatient.csv
   "name" : "EducationPatient",
   "title" : "Education Patient",
   "status" : "draft",
-  "date" : "2026-11-02T12:36:27+00:00",
+  "date" : "2026-11-02T12:48:09+00:00",
   "publisher" : "FHIR-utbildning",
   "description" : "Patientprofil för FHIR-utbildningen. Profilen byggs ut steg för steg under kursen.",
   "jurisdiction" : [{
@@ -86,11 +86,69 @@ Other representations of profile: [CSV](StructureDefinition-EducationPatient.csv
   "differential" : {
     "element" : [{
       "id" : "Patient",
-      "path" : "Patient"
+      "path" : "Patient",
+      "constraint" : [{
+        "key" : "edu-pat-1",
+        "severity" : "error",
+        "human" : "Ett personnummer ska bestå av exakt 12 siffror (ÅÅÅÅMMDDNNNN).",
+        "expression" : "identifier.where(system = 'http://electronichealth.se/identifier/personnummer').all(value.matches('^[0-9]{12}$'))",
+        "source" : "http://example.org/fhir/education/kursig/StructureDefinition/EducationPatient"
+      },
+      {
+        "key" : "edu-pat-2",
+        "severity" : "error",
+        "human" : "Födelsedatum får inte ligga i framtiden.",
+        "expression" : "birthDate.empty() or birthDate <= today()",
+        "source" : "http://example.org/fhir/education/kursig/StructureDefinition/EducationPatient"
+      }]
+    },
+    {
+      "id" : "Patient.extension",
+      "path" : "Patient.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Patient.extension:tolkbehov",
+      "path" : "Patient.extension",
+      "sliceName" : "tolkbehov",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired|5.4.0"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Patient.extension:skyddadIdentitet",
+      "path" : "Patient.extension",
+      "sliceName" : "skyddadIdentitet",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://example.org/fhir/education/kursig/StructureDefinition/SkyddadIdentitet"]
+      }],
+      "mustSupport" : true
     },
     {
       "id" : "Patient.identifier",
       "path" : "Patient.identifier",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "system"
+        }],
+        "description" : "Identifierare skiljs åt med hjälp av system.",
+        "rules" : "open"
+      },
       "min" : 1,
       "mustSupport" : true
     },
@@ -103,6 +161,34 @@ Other representations of profile: [CSV](StructureDefinition-EducationPatient.csv
       "id" : "Patient.identifier.value",
       "path" : "Patient.identifier.value",
       "min" : 1
+    },
+    {
+      "id" : "Patient.identifier:personnummer",
+      "path" : "Patient.identifier",
+      "sliceName" : "personnummer",
+      "short" : "Personnummer (12 siffror)",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Patient.identifier:personnummer.system",
+      "path" : "Patient.identifier.system",
+      "patternUri" : "http://electronichealth.se/identifier/personnummer"
+    },
+    {
+      "id" : "Patient.identifier:samordningsnummer",
+      "path" : "Patient.identifier",
+      "sliceName" : "samordningsnummer",
+      "short" : "Samordningsnummer (12 siffror)",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Patient.identifier:samordningsnummer.system",
+      "path" : "Patient.identifier.system",
+      "patternUri" : "http://electronichealth.se/identifier/samordningsnummer"
     },
     {
       "id" : "Patient.name",
@@ -131,6 +217,14 @@ Other representations of profile: [CSV](StructureDefinition-EducationPatient.csv
       "path" : "Patient.birthDate",
       "min" : 1,
       "mustSupport" : true
+    },
+    {
+      "id" : "Patient.maritalStatus",
+      "path" : "Patient.maritalStatus",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/marital-status"
+      }
     }]
   }
 }

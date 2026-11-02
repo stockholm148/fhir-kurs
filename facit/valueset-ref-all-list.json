@@ -191,8 +191,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.45"],
     "uses" : {
     },
-    "StructureDefinition-EducationEncounter.html" : "Education Encounter",
-    "StructureDefinition-EducationPatient.html" : "Education Patient"
+    "StructureDefinition-EducationPatient.html" : "Education Patient",
+    "StructureDefinition-EducationEncounter.html" : "Education Encounter"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -206,8 +206,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.57"],
     "uses" : {
     },
-    "StructureDefinition-EducationEncounter.html" : "Education Encounter",
-    "StructureDefinition-EducationPatient.html" : "Education Patient"
+    "StructureDefinition-EducationPatient.html" : "Education Patient",
+    "StructureDefinition-EducationEncounter.html" : "Education Encounter"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -221,8 +221,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
-    "StructureDefinition-EducationEncounter.html" : "Education Encounter",
-    "StructureDefinition-EducationPatient.html" : "Education Patient"
+    "StructureDefinition-EducationPatient.html" : "Education Patient",
+    "StructureDefinition-EducationEncounter.html" : "Education Encounter"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/link-type",

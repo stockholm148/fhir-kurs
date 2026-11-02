@@ -1,5 +1,29 @@
 {
   "codeSystems" : [{
+    "url" : "http://example.org/fhir/education/kursig/ValueSet/education-encounter-class",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "EducationEncounterClassVS",
+    "title" : "Klass av vårdkontakt",
+    "description" : "Ett urval av koder ur HL7 v3 ActCode som får användas i Encounter.class.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+    "uses" : {
+    },
+    "StructureDefinition-EducationEncounter.html" : "Education Encounter"
+  },
+  {
+    "url" : "http://example.org/fhir/education/kursig/ValueSet/kontakttyp-vs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "KontakttypVS",
+    "title" : "Kontakttyp – ValueSet",
+    "description" : "Alla koder i kodsystemet Kontakttyp.",
+    "systems" : ["http://example.org/fhir/education/kursig/CodeSystem/kontakttyp"],
+    "uses" : {
+    },
+    "StructureDefinition-EducationEncounter.html" : "Education Encounter"
+  },
+  {
     "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
     "version" : "4.0.1",
     "status" : "active",
@@ -151,20 +175,6 @@
     "systems" : ["http://hl7.org/fhir/encounter-status"],
     "oids" : ["2.16.840.1.113883.4.642.3.246"],
     "sources" : ["2.16.840.1.113883.4.642.3.246"],
-    "uses" : {
-    },
-    "StructureDefinition-EducationEncounter.html" : "Education Encounter"
-  },
-  {
-    "url" : "http://hl7.org/fhir/ValueSet/encounter-type",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "EncounterType",
-    "title" : "Encounter type",
-    "description" : "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
-    "systems" : ["http://terminology.hl7.org/CodeSystem/encounter-type"],
-    "oids" : ["2.16.840.1.113883.4.642.3.248"],
-    "sources" : ["2.16.840.1.113883.4.642.3.248"],
     "uses" : {
     },
     "StructureDefinition-EducationEncounter.html" : "Education Encounter"

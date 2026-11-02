@@ -3,7 +3,15 @@
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "SE",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://example.org/fhir/education/kursig/StructureDefinition/SkyddadIdentitet",
+      "title": "Skyddad identitet",
+      "types": [
+        "boolean"
+      ]
+    }
+  ],
   "profiles": {
     "Encounter": [
       {
@@ -19,6 +27,9 @@
     ]
   },
   "usage": {
+    "http://example.org/fhir/education/kursig/StructureDefinition/SkyddadIdentitet": [
+      "Patient"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -33,6 +44,12 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired|5.4.0": [
+      "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
