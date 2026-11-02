@@ -1,4 +1,3 @@
-// Lösning efter övning 3.2. Alla element som profilen kräver (1..1) måste finnas med.
 Instance: encounter-tolvan-1
 InstanceOf: EducationEncounter
 Title: "Besök på vårdcentral"
@@ -7,8 +6,7 @@ Usage: #example
 
 * status = #finished
 * class = $v3-ActCode#AMB "ambulatory"
-// Typen anges tills vidare som fritext. I övning 3.3 byts den mot en kod ur kodsystemet Kontakttyp.
-* type.text = "Besök"
+* type = KontakttypCS#besok "Besök"
 * subject = Reference(patient-tolvan)
 * period.start = "2026-10-01T09:00:00+02:00"
 * period.end = "2026-10-01T09:30:00+02:00"

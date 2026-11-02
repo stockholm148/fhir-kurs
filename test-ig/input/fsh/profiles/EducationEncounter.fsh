@@ -1,4 +1,4 @@
-// Lösning efter övning 3.2: profilen utan terminologibindningar (de läggs till i övning 3.3).
+// Lösning efter modul 4 (FHIRPath).
 Profile: EducationEncounter
 Parent: Encounter
 Id: EducationEncounter
@@ -8,8 +8,15 @@ Description: "Profil för en vårdkontakt i FHIR-utbildningen."
 * ^status = #draft
 
 * status MS
+
+// --- Övning 3.3a: Bindning till ett eget ValueSet (som räknar upp koder med include) ---
 * class MS
+* class from EducationEncounterClassVS (required)
+
+// Typ av kontakt: ValueSet som inkluderar ett helt (eget) kodsystem.
+// extensible = använd en kod härifrån om det finns en som passar.
 * type 1..1 MS
+* type from KontakttypVS (extensible)
 
 // Vårdkontakten måste gälla en patient som följer vår patientprofil.
 * subject 1..1 MS
@@ -25,3 +32,6 @@ Description: "Profil för en vårdkontakt i FHIR-utbildningen."
 * serviceProvider 1..1 MS
 * serviceProvider.identifier 1..1 MS
 * serviceProvider.identifier.system = $hsaid
+
+// --- Övning 4: Invarianter (se invariants.fsh) ---
+* obeys edu-enc-1 and edu-enc-2
