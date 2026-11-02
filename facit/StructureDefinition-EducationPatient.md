@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/education/kursig/StructureDefinition/EducationPatient | *Version*:0.1.0 |
-| Draft as of 2026-10-19 | *Computable Name*:EducationPatient |
+| Draft as of 2026-11-02 | *Computable Name*:EducationPatient |
 
  
 Patientprofil för FHIR-utbildningen. Profilen byggs ut steg för steg under kursen. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-EducationPatient.csv
   "name" : "EducationPatient",
   "title" : "Education Patient",
   "status" : "draft",
-  "date" : "2026-10-19T11:35:08+00:00",
+  "date" : "2026-11-02T12:36:31+00:00",
   "publisher" : "FHIR-utbildning",
   "description" : "Patientprofil för FHIR-utbildningen. Profilen byggs ut steg för steg under kursen.",
   "jurisdiction" : [{
@@ -123,7 +123,7 @@ Other representations of profile: [CSV](StructureDefinition-EducationPatient.csv
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired|5.3.0"]
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired|5.4.0"]
       }],
       "mustSupport" : true
     },

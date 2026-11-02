@@ -16,7 +16,7 @@ Patientprofil för FHIR-utbildningen. Profilen byggs ut steg för steg under kur
 
 **Användningar:**
 
-* Referera till denna Profil: [Min profil](StructureDefinition-EducationEncouter.md)
+* Referera till denna Profil: [Education Encounter](StructureDefinition-EducationEncounter.md)
 * Exempel för denna Profil: [Patient/patient-tolvan](Patient-patient-tolvan.md)
 
 Du kan också kontrollera [användningar i FHIR IG-statistiken](https://packages2.fhir.org/xig/fhir.education.kursig|current/StructureDefinition/EducationPatient)
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-EducationPatient.csv
   "name" : "EducationPatient",
   "title" : "Education Patient",
   "status" : "draft",
-  "date" : "2026-11-02T12:30:52+00:00",
+  "date" : "2026-11-02T12:36:27+00:00",
   "publisher" : "FHIR-utbildning",
   "description" : "Patientprofil för FHIR-utbildningen. Profilen byggs ut steg för steg under kursen.",
   "jurisdiction" : [{

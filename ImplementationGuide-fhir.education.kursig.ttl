@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "FhirEducationKursIG"] ;
   fhir:ImplementationGuide.title [ fhir:value "FHIR-utbildning Emmas variant – Kurs-IG"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-11-02T12:30:52+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-11-02T12:36:27+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "FHIR-utbildning"] ;
   fhir:ImplementationGuide.description [ fhir:value "En liten Implementation Guide som byggs upp steg för steg under FHIR-utbildningen."] ;
   fhir:ImplementationGuide.jurisdiction [
@@ -411,6 +411,37 @@
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/education/kursig/Encounter/encounter-tolvan-1> ;
+         fhir:Reference.reference [ fhir:value "Encounter/encounter-tolvan-1" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Besök på vårdcentral" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tolvan besöker vårdcentralen." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/education/kursig/StructureDefinition/EducationEncounter" ;
+         fhir:link <http://example.org/fhir/education/kursig/StructureDefinition/EducationEncounter>
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/education/kursig/StructureDefinition/EducationEncounter> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/EducationEncounter" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Education Encounter" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profil för en vårdkontakt i FHIR-utbildningen." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
@@ -421,20 +452,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patientprofil för FHIR-utbildningen. Profilen byggs ut steg för steg under kursen." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://example.org/fhir/education/kursig/StructureDefinition/EducationEncouter> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/EducationEncouter" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Min profil" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 2 ;
+       fhir:index 3 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;

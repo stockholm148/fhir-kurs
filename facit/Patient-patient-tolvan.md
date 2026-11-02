@@ -15,7 +15,7 @@ Tolvan Tolvansson (official) Male, Födelsedatum: 1912-12-12 ( http://electronic
 | | |
 | :--- | :--- |
 | Civilstånd: | Married |
-| [Interpreter Required](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-patient-interpreterRequired.html) | false |
+| [Interpreter Required](http://hl7.org/fhir/extensions/5.4.0/StructureDefinition-patient-interpreterRequired.html) | false |
 | [Skyddad identitet](StructureDefinition-SkyddadIdentitet.md) | false |
 
 

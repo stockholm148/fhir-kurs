@@ -7,8 +7,8 @@
   "profiles": {
     "Encounter": [
       {
-        "url": "http://example.org/fhir/education/kursig/StructureDefinition/EducationEncouter",
-        "title": "Min profil"
+        "url": "http://example.org/fhir/education/kursig/StructureDefinition/EducationEncounter",
+        "title": "Education Encounter"
       }
     ],
     "Patient": [
@@ -30,6 +30,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"

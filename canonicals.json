@@ -6,9 +6,9 @@
   "name" : "FhirEducationKursIG"
 },
 {
-  "id" : "EducationEncouter",
+  "id" : "EducationEncounter",
   "type" : "StructureDefinition",
-  "url" : "http://example.org/fhir/education/kursig/StructureDefinition/EducationEncouter",
+  "url" : "http://example.org/fhir/education/kursig/StructureDefinition/EducationEncounter",
   "version" : "0.1.0",
   "name" : "EducationEncounter"
 },

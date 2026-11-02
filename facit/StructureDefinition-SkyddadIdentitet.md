@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/education/kursig/StructureDefinition/SkyddadIdentitet | *Version*:0.1.0 |
-| Draft as of 2026-10-19 | *Computable Name*:SkyddadIdentitet |
+| Draft as of 2026-11-02 | *Computable Name*:SkyddadIdentitet |
 
 Anger om patienten har skyddade personuppgifter (t.ex. sekretessmarkering eller skyddad folkbokföring).
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-SkyddadIdentitet.csv
   "name" : "SkyddadIdentitet",
   "title" : "Skyddad identitet",
   "status" : "draft",
-  "date" : "2026-10-19T11:35:08+00:00",
+  "date" : "2026-11-02T12:36:31+00:00",
   "publisher" : "FHIR-utbildning",
   "description" : "Anger om patienten har skyddade personuppgifter (t.ex. sekretessmarkering eller skyddad folkbokföring).",
   "jurisdiction" : [{

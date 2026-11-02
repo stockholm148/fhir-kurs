@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/education/kursig/ValueSet/education-encounter-class | *Version*:0.1.0 |
-| Draft as of 2026-10-19 | *Computable Name*:EducationEncounterClassVS |
+| Draft as of 2026-11-02 | *Computable Name*:EducationEncounterClassVS |
 
  
 Ett urval av koder ur HL7 v3 ActCode som får användas i Encounter.class. 
@@ -51,7 +51,7 @@ Ett urval av koder ur HL7 v3 ActCode som får användas i Encounter.class.
   "title" : "Klass av vårdkontakt",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-19T11:35:08+00:00",
+  "date" : "2026-11-02T12:36:31+00:00",
   "publisher" : "FHIR-utbildning",
   "description" : "Ett urval av koder ur HL7 v3 ActCode som får användas i Encounter.class.",
   "jurisdiction" : [{

@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "SkyddadIdentitet"] ;
   fhir:StructureDefinition.title [ fhir:value "Skyddad identitet"] ;
   fhir:StructureDefinition.status [ fhir:value "draft"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-10-19T11:35:08+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-11-02T12:36:31+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "FHIR-utbildning"] ;
   fhir:StructureDefinition.description [ fhir:value "Anger om patienten har skyddade personuppgifter (t.ex. sekretessmarkering eller skyddad folkbokföring)."] ;
   fhir:StructureDefinition.jurisdiction [

@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/education/kursig/ImplementationGuide/fhir.education.kursig | *Version*:0.1.0 |
-| Draft as of 2026-10-19 | *Computable Name*:FhirEducationKursIG |
+| Draft as of 2026-11-02 | *Computable Name*:FhirEducationKursIG |
 
 Det här är den Implementation Guide (IG) som vi bygger upp under FHIR-utbildningen.
 
@@ -30,9 +30,9 @@ Denna publication inkluderar IP som omfattas av följande uttalanden.
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
 
-* [ActCode](http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActCode.html): [EducationEncounter](StructureDefinition-EducationEncounter.md), [EducationEncounterClassVS](ValueSet-education-encounter-class.md) and [Encounter/encounter-tolvan-1](Encounter-encounter-tolvan-1.md)
-* [MaritalStatus](http://terminology.hl7.org/7.4.0/CodeSystem-v3-MaritalStatus.html): [EducationPatient](StructureDefinition-EducationPatient.md) and [Patient/patient-tolvan](Patient-patient-tolvan.md)
-* [NullFlavor](http://terminology.hl7.org/7.4.0/CodeSystem-v3-NullFlavor.html): [EducationPatient](StructureDefinition-EducationPatient.md)
+* [ActCode](http://terminology.hl7.org/7.5.0/CodeSystem-v3-ActCode.html): [EducationEncounter](StructureDefinition-EducationEncounter.md), [EducationEncounterClassVS](ValueSet-education-encounter-class.md) and [Encounter/encounter-tolvan-1](Encounter-encounter-tolvan-1.md)
+* [MaritalStatus](http://terminology.hl7.org/7.5.0/CodeSystem-v3-MaritalStatus.html): [EducationPatient](StructureDefinition-EducationPatient.md) and [Patient/patient-tolvan](Patient-patient-tolvan.md)
+* [NullFlavor](http://terminology.hl7.org/7.5.0/CodeSystem-v3-NullFlavor.html): [EducationPatient](StructureDefinition-EducationPatient.md)
 
 
 Detta är en R4 IG. Inga av funktionerna den använder har ändrats i R4B, så den kan användas som den är med R4B-system. Paket för både [R4 (fhir.education.kursig.r4)](package.r4.tgz) och [R4B (fhir.education.kursig.r4b)](package.r4b.tgz) är tillgängliga.
@@ -54,7 +54,7 @@ Detta är en R4 IG. Inga av funktionerna den använder har ändrats i R4B, så d
   "name" : "FhirEducationKursIG",
   "title" : "FHIR-utbildning – Kurs-IG (facit)",
   "status" : "draft",
-  "date" : "2026-10-19T11:35:08+00:00",
+  "date" : "2026-11-02T12:36:31+00:00",
   "publisher" : "FHIR-utbildning",
   "description" : "En liten Implementation Guide som byggs upp steg för steg under FHIR-utbildningen.",
   "jurisdiction" : [{
@@ -75,7 +75,7 @@ Detta är en R4 IG. Inga av funktionerna den använder har ändrats i R4B, så d
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.4.0"
+    "version" : "7.5.0"
   },
   {
     "id" : "hl7ext",
@@ -85,7 +85,7 @@ Detta är en R4 IG. Inga av funktionerna den använder har ändrats i R4B, så d
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.3.0"
+    "version" : "5.4.0"
   }],
   "definition" : {
     "extension" : [{

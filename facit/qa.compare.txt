@@ -57,7 +57,7 @@ INFORMATION: Patient/patient-tolvan: Patient.maritalStatus.coding[0].display: In
 
 == fsh-generated/resources/StructureDefinition-EducationEncounter.json ==
 INFORMATION: StructureDefinition/EducationEncounter: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#SE for language(s) 'sv-SE'. The display is 'Sweden' which is a valid display for the default language
-INFORMATION: StructureDefinition/EducationEncounter: StructureDefinition.snapshot.element[4].binding.extension[0]: extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0 är föråldrad med noteringen: 'Use additionalBinding extension or element instead'
+INFORMATION: StructureDefinition/EducationEncounter: StructureDefinition.snapshot.element[4].binding.extension[0]: extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.4.0 är föråldrad med noteringen: 'Use additionalBinding extension or element instead'
 WARNING: StructureDefinition/EducationEncounter: StructureDefinition.differential.element[2].binding: Definitionen för elementet 'Encounter.class' binder till värdemängden 'http://example.org/fhir/education/kursig/ValueSet/education-encounter-class' som är experimentell, men denna struktur är inte märkt som experimentell
 WARNING: StructureDefinition/EducationEncounter: StructureDefinition.differential.element[3].binding: Definitionen för elementet 'Encounter.type' binder till värdemängden 'http://example.org/fhir/education/kursig/ValueSet/kontakttyp-vs' som är experimentell, men denna struktur är inte märkt som experimentell
 WARNING: StructureDefinition/EducationEncounter: StructureDefinition.snapshot.element[17].binding: Definitionen för elementet 'Encounter.class' binder till värdemängden 'http://example.org/fhir/education/kursig/ValueSet/education-encounter-class' som är experimentell, men denna struktur är inte märkt som experimentell
@@ -66,8 +66,8 @@ INFORMATION: Resource: The resource StructureDefinition/EducationEncounter could
 
 
 == fsh-generated/resources/StructureDefinition-EducationPatient.json ==
-INFORMATION: StructureDefinition.snapshot.element[8].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired to 5.3.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.3.0 (hl7.fhir.uv.extensions.r4#5.3.0)
-INFORMATION: StructureDefinition.differential.element[2].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired to 5.3.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.3.0 (hl7.fhir.uv.extensions.r4#5.3.0)
+INFORMATION: StructureDefinition.snapshot.element[8].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired to 5.4.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.4.0 (hl7.fhir.uv.extensions.r4#5.4.0)
+INFORMATION: StructureDefinition.differential.element[2].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired to 5.4.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.4.0 (hl7.fhir.uv.extensions.r4#5.4.0)
 INFORMATION: StructureDefinition/EducationPatient: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#SE for language(s) 'sv-SE'. The display is 'Sweden' which is a valid display for the default language
 INFORMATION: Resource: The resource StructureDefinition/EducationPatient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 
